@@ -50,6 +50,12 @@ $(document).ready(function () {
         $('.current-hours').html($('.current-city').find('.hours').html());
     }
 
+    $('.burger').click(function() {
+
+        $(this).parents('nav').toggleClass('active');
+
+    });
+
     /******************************************************************************************************************
      ******* sliders scripts
      ******************************************************************************************************************/
@@ -61,7 +67,26 @@ $(document).ready(function () {
         dots: true
     });
 
-    $('.slider-news').slick();
+    $('.slider-news').slick({
+        slidesToShow: 3,
+        appendArrows: '.slider-news-control',
+        prevArrow: '.slider-news-prev',
+        nextArrow: '.slider-news-next',
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 
 
 });
