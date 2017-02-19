@@ -15,6 +15,17 @@ $(document).ready(function () {
      ****** scroll scripts ********
      ******************************/
 
+    $(window).scroll(function () {
+
+        if ($(window).scrollTop() > 0) {
+            $('header[role="banner"]').addClass('with-background');
+        } else {
+            $('header[role="banner"]').removeClass('with-background');
+        }
+
+    });
+
+
 
 
     /******************************************************************************************************************
@@ -47,6 +58,7 @@ $(document).ready(function () {
 
     function refreshSelect() {
         $('.current-phone-number').html($('.current-city').find('.phone-number').html());
+        $('.current-phone-number').attr('href', $('.current-city').find('.phone-number').attr('href'));
         $('.current-hours').html($('.current-city').find('.hours').html());
     }
 
