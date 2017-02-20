@@ -1026,16 +1026,14 @@ nav {
   padding: 40px 0;
 
   ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: block;
 
     li {
       display: block;
       width: 27%;
-      min-width: 280px;
-      margin: 15px;
+      margin: 1.5% 9.5% 1.5% 0;
+      float: left;
+      white-space: nowrap;
 
       &:before {
         content: '';
@@ -1086,6 +1084,11 @@ nav {
         -ms-transition: .4s;
         -o-transition: .4s;
         transition: .4s;
+
+        @media (max-width: 980px) {
+          margin-left: 10px;
+        }
+
       }
 
       &:hover span,
@@ -1107,6 +1110,46 @@ nav {
         animation-iteration-count: infinite;
       }
 
+      &:nth-child(3n) {
+        margin: 1.5% 0;
+      }
+
+      @media (max-width: 980px) {
+        margin: 1.5% 8% 1.5% 0;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 250px;
+        margin: 10px 30px 10px 0;
+
+        &:nth-child(3n) {
+          width: 100%;
+          max-width: 250px;
+          margin: 10px 30px 10px 0;
+        }
+
+        &:nth-child(2n) {
+          width: 100%;
+          max-width: 250px;
+          margin: 10px 0;
+        }
+
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      li,
+      li:nth-child(2n),
+      li:nth-child(3n) {
+        width: 250px;
+        max-width: 250px;
+        margin: 20px auto;
+        float: none;
+      }
+
     }
 
   }
@@ -1121,14 +1164,14 @@ nav {
   padding: 40px 0 75px;
 
   ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: block;
     counter-reset: list;
+    text-align: center;
 
     li {
-      display: block;
+      display: inline-block;
       width: 23%;
+      margin: 20px 0;
       text-align: center;
       position: relative;
       z-index: 1;
@@ -1166,7 +1209,7 @@ nav {
           background: transparent url(../source/images/sprite-arrows.png) 0 0;
           position: absolute;
           top: 0;
-          left: 82%;
+          left: 76%;
 
           @media (max-width: 1230px) {
             display: none;
@@ -1206,15 +1249,6 @@ nav {
 
       }
 
-      @media (max-width: 980px) {
-        margin: 20px 15px;
-      }
-
-    }
-
-    @media (max-width: 980px) {
-      justify-content: center;
-      flex-wrap: wrap;
     }
 
   }
@@ -1665,7 +1699,7 @@ footer[role='contentinfo'] {
 
     @media (max-width: 360px) {
       display: block;
-      margin: 10px 0;
+      margin: 10px auto;
     }
 
   }
@@ -1685,7 +1719,7 @@ footer[role='contentinfo'] {
 
     @media (max-width: 360px) {
       display: block;
-      margin: 10px 0;
+      margin: 10px auto;
     }
 
   }
