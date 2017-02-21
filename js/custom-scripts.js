@@ -38,6 +38,10 @@ $(document).ready(function () {
             $('.select-city').removeClass('active');
         }
 
+        if (!$(event.target).closest(".custom-select").length) {
+            $('.custom-select').removeClass('active');
+        }
+
     });
 
     $('.select-city .current-city').click(function() {
@@ -65,6 +69,43 @@ $(document).ready(function () {
     $('.burger').click(function() {
 
         $(this).parents('nav').toggleClass('active');
+
+    });
+
+    $('.callback').click(function() {
+
+        $('.window-callback').fadeIn();
+
+    });
+
+    $('.to-order').click(function() {
+
+        $('.window-order').fadeIn();
+
+    });
+
+    $('.window').click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest($('.window form')).length) $('.window').fadeOut();
+        if ($target.hasClass('close-marker')) $('.window').fadeOut();
+    });
+
+    $('.custom-select .current-value').click(function() {
+
+        if ($(this).parent().hasClass('active')) {
+            $('.custom-select').removeClass('active');
+        } else {
+            $('.custom-select').removeClass('active');
+            $(this).parent().addClass('active');
+        }
+
+    });
+
+    $('.custom-select ul li').click(function() {
+
+        $(this).parent().siblings('.current-value').find('span').html($(this).html());
+        $(this).parents('.custom-select').find('input').attr('value', $(this).html());
+        $(this).parents('.custom-select').removeClass('active');
 
     });
 

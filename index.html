@@ -358,6 +358,239 @@
 
 </div>
 
+<div class="window window-callback">
+
+    <form action="#" class="form-callback">
+
+        <div class="close-marker"></div>
+
+        <div class="title">Заявка на звонок</div>
+
+        <fieldset>
+
+            <label class="field-wrap short-field">
+                <input type="text" placeholder="Ваше имя">
+            </label>
+
+            <label class="field-wrap short-field">
+                <input type="tel" placeholder="Ваш номер телефона *" required>
+            </label>
+
+        </fieldset>
+
+        <label class="textarea-wrap">
+            <textarea cols="" rows="" placeholder="Ваше сообщение"></textarea>
+        </label>
+
+        <fieldset class="fieldset-radio">
+
+            <input type="radio" id="callback-radio-1" name="callback-radio" checked>
+            <label for="callback-radio-1"><i class="fa fa-chevron-down"></i>Заказ</label>
+
+            <input type="radio" id="callback-radio-2" name="callback-radio">
+            <label for="callback-radio-2"><i class="fa fa-chevron-down"></i>Работа</label>
+
+            <input type="radio" id="callback-radio-3" name="callback-radio">
+            <label for="callback-radio-3"><i class="fa fa-chevron-down"></i>Поддержка</label>
+
+        </fieldset>
+
+        <button type="submit"><i class="fa fa-phone"></i>перезвонить мне</button>
+
+    </form>
+
+</div>
+
+<div class="window window-order">
+
+    <form action="#" class="form-order">
+
+        <div class="close-marker"></div>
+
+        <div class="title">Заявка на такси</div>
+
+        <fieldset>
+
+            <div class="custom-select">
+                <div class="current-value"><span>Время</span><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></div>
+                <ul>
+                    <li>Время-1</li>
+                    <li>Время-2</li>
+                    <li>Время-3</li>
+                    <li>Время-4</li>
+                    <li>Время-5</li>
+                </ul>
+                <label><input type="text" id="order-time"></label>
+            </div>
+
+            <div class="custom-select field-right">
+                <div class="current-value"><span>Дата</span><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></div>
+                <ul>
+                    <li>Дата-1</li>
+                    <li>Дата-2</li>
+                    <li>Дата-3</li>
+                    <li>Дата-4</li>
+                    <li>Дата-5</li>
+                </ul>
+                <label><input type="text" id="order-date"></label>
+            </div>
+
+            <label class="field-wrap">
+                <input type="text" placeholder="Ваше имя">
+            </label>
+
+            <label class="field-wrap field-right">
+                <input type="tel" placeholder="Ваш номер телефона">
+            </label>
+
+        </fieldset>
+
+        <div class="sub-title">Количество бонусов: <span class="bonuses">75</span></div>
+
+        <fieldset>
+
+            <div class="custom-select">
+                <div class="current-value"><span>Город</span><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></div>
+                <ul>
+                    <li>Город-1</li>
+                    <li>Город-2</li>
+                    <li>Город-3</li>
+                    <li>Город-4</li>
+                    <li>Город-5</li>
+                </ul>
+                <label><input type="text" id="order-city-from"></label>
+            </div>
+
+            <label class="field-wrap field-right">
+                <input type="text" placeholder="Адрес подачи">
+            </label>
+
+            <label class="field-wrap">
+                <input type="text" placeholder="Улица">
+            </label>
+
+            <label class="field-wrap field-right">
+                <input type="text" placeholder="Дом, корпус, строение, подъезд">
+            </label>
+
+        </fieldset>
+
+        <label class="textarea-wrap">
+            <textarea cols="" rows="" placeholder="Ваш комментарий"></textarea>
+        </label>
+
+        <div class="sub-title">Куда едем:</div>
+
+        <fieldset>
+
+            <label class="field-wrap">
+                <input type="text" placeholder="Город">
+            </label>
+
+            <label class="field-wrap field-right">
+                <input type="text" placeholder="Адрес">
+            </label>
+
+            <label class="field-wrap">
+                <input type="text" placeholder="Улица">
+            </label>
+
+            <label class="field-wrap field-right">
+                <input type="text" placeholder="Дом, корпус, строение, подъезд">
+            </label>
+
+        </fieldset>
+
+        <label class="textarea-wrap">
+            <textarea cols="" rows="" placeholder="Примечание"></textarea>
+        </label>
+
+        <fieldset>
+
+            <div class="custom-select">
+                <div class="current-value"><span>Категория</span><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></div>
+                <ul>
+                    <li>Категория-1</li>
+                    <li>Категория-2</li>
+                    <li>Категория-3</li>
+                    <li>Категория-4</li>
+                    <li>Категория-5</li>
+                </ul>
+                <label><input type="text" id="order-category"></label>
+            </div>
+
+            <div class="custom-select field-right">
+                <div class="current-value"><span>Расчет</span><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></div>
+                <ul>
+                    <li>Расчет-1</li>
+                    <li>Расчет-2</li>
+                    <li>Расчет-3</li>
+                    <li>Расчет-4</li>
+                    <li>Расчет-5</li>
+                </ul>
+                <label><input type="text" id="order-payment"></label>
+            </div>
+
+        </fieldset>
+
+        <div class="sub-title">Дополнительные услуги:</div>
+
+        <ul class="checkboxes">
+
+            <li>
+                <input type="checkbox" id="order-checkbox-1" name="order-checkbox" checked>
+                <label for="order-checkbox-1"><i class="fa fa-chevron-down"></i>Детское кресло</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="order-checkbox-2" name="order-checkbox">
+                <label for="order-checkbox-2"><i class="fa fa-chevron-down"></i>Женщина-водитель</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="order-checkbox-3" name="order-checkbox">
+                <label for="order-checkbox-3"><i class="fa fa-chevron-down"></i>Кузов универсал</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="order-checkbox-4" name="order-checkbox">
+                <label for="order-checkbox-4"><i class="fa fa-chevron-down"></i>Встреча с табличкой</label>
+            </li>
+
+        </ul>
+
+        <ul class="checkboxes">
+
+            <li>
+                <input type="checkbox" id="order-checkbox-5" name="order-checkbox">
+                <label for="order-checkbox-5"><i class="fa fa-chevron-down"></i>Детское кресло</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="order-checkbox-6" name="order-checkbox">
+                <label for="order-checkbox-6"><i class="fa fa-chevron-down"></i>Женщина-водитель</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="order-checkbox-7" name="order-checkbox">
+                <label for="order-checkbox-7"><i class="fa fa-chevron-down"></i>Кузов универсал</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="order-checkbox-8" name="order-checkbox">
+                <label for="order-checkbox-8"><i class="fa fa-chevron-down"></i>Встреча с табличкой</label>
+            </li>
+
+        </ul>
+
+        <div class="total">Примерная стоимость: <span class="value">757 руб.</span></div>
+
+        <button type="submit"><i class="fa fa-comments"></i>Заказать online</button>
+
+    </form>
+
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script src="js/custom-scripts.js"></script>
