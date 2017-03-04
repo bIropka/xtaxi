@@ -2123,13 +2123,13 @@ textarea:focus:-ms-input-placeholder {
   line-height: 1.5;
 }
 .our-secrets .wrapper-inner {
-  background: url(../images/decor-our-secrets.png) no-repeat left bottom, url(../images/background-our-secrets.jpg) no-repeat left center;
+  background: url(../images/decor-our-secrets.png) no-repeat left bottom, url(../images/background-black.jpg) no-repeat left center;
   background-size: auto, cover;
   padding: 35px 35px 35px 230px;
 }
 @media (max-width: 768px) {
   .our-secrets .wrapper-inner {
-    background: url(../images/background-our-secrets.jpg) no-repeat left center;
+    background: url(../images/background-black.jpg) no-repeat left center;
     background-size: cover;
     padding: 10px;
   }
