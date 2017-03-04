@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,700&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700i);
 /**********************************************************************************************************************
 ********** general
@@ -30,7 +30,7 @@
   background: #fff;
   position: relative;
 }
-@media (max-width: 1230px) {
+@media (max-width: 768px) {
   .wrapper {
     padding-bottom: 0;
   }
@@ -52,12 +52,6 @@
   .wrapper-inner {
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .wrapper-inner {
-    padding-left: 5px;
-    padding-right: 5px;
   }
 }
 .wrapper-inner:after {
@@ -416,7 +410,7 @@ nav .sign-in:hover .fa-unlock-alt {
 .top-block {
   padding-top: 120px;
   padding-bottom: 50px;
-  background: url(../source/images/background.png) no-repeat 0 0;
+  background: url(../images/background.png) no-repeat 0 0;
   background-size: cover;
 }
 .top-block .contacts {
@@ -761,7 +755,7 @@ nav .sign-in:hover .fa-unlock-alt {
   float: right;
   width: 419px;
   height: 832px;
-  background: url(../source/images/slider-background.png) no-repeat;
+  background: url(../images/slider-background.png) no-repeat;
   -webkit-transform: rotate(3deg);
   -moz-transform: rotate(3deg);
   -ms-transform: rotate(3deg);
@@ -857,6 +851,9 @@ nav .sign-in:hover .fa-unlock-alt {
 .slider-mobile .slick-dots li.slick-active button {
   background: #901414;
 }
+.inner-page h1 {
+  float: right;
+}
 /**********************************************************************************************************************
 ********** advantages-1
 ***********************************************************************************************************************/
@@ -911,22 +908,22 @@ nav .sign-in:hover .fa-unlock-alt {
   transform: perspective(1px) translateZ(0);
 }
 .advantages-1 ul li:nth-child(1):before {
-  background: #eb983d url(../source/images/sprite.png) no-repeat 0 0;
+  background: #eb983d url(../images/sprite.png) no-repeat 0 0;
 }
 .advantages-1 ul li:nth-child(2):before {
-  background: #eb983d url(../source/images/sprite.png) no-repeat -80px 0;
+  background: #eb983d url(../images/sprite.png) no-repeat -80px 0;
 }
 .advantages-1 ul li:nth-child(3):before {
-  background: #eb983d url(../source/images/sprite.png) no-repeat -160px 0;
+  background: #eb983d url(../images/sprite.png) no-repeat -160px 0;
 }
 .advantages-1 ul li:nth-child(4):before {
-  background: #eb983d url(../source/images/sprite.png) no-repeat -240px 0;
+  background: #eb983d url(../images/sprite.png) no-repeat -240px 0;
 }
 .advantages-1 ul li:nth-child(5):before {
-  background: #eb983d url(../source/images/sprite.png) no-repeat -320px 0;
+  background: #eb983d url(../images/sprite.png) no-repeat -320px 0;
 }
 .advantages-1 ul li:nth-child(6):before {
-  background: #eb983d url(../source/images/sprite.png) no-repeat -400px 0;
+  background: #eb983d url(../images/sprite.png) no-repeat -400px 0;
 }
 .advantages-1 ul li span {
   display: inline-block;
@@ -1046,7 +1043,7 @@ nav .sign-in:hover .fa-unlock-alt {
   display: block;
   width: 134px;
   height: 25px;
-  background: transparent url(../source/images/sprite-arrows.png) 0 0;
+  background: transparent url(../images/sprite-arrows.png) 0 0;
   position: absolute;
   top: 0;
   left: 76%;
@@ -1129,7 +1126,7 @@ nav .sign-in:hover .fa-unlock-alt {
   vertical-align: top;
   width: 22px;
   height: 22px;
-  background: url(../source/images/icon-ok.png) no-repeat;
+  background: url(../images/icon-ok.png) no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -1257,7 +1254,7 @@ nav .sign-in:hover .fa-unlock-alt {
   display: block;
   width: 22px;
   height: 22px;
-  background: url(../source/images/icon-calendar.png) no-repeat;
+  background: url(../images/icon-calendar.png) no-repeat;
   position: absolute;
   left: 0;
   top: 2px;
@@ -1992,4 +1989,214 @@ textarea:focus:-moz-placeholder {
 }
 textarea:focus:-ms-input-placeholder {
   color: transparent;
+}
+/**********************************************************************************************************************
+********** inner-page
+***********************************************************************************************************************/
+.inner-page .top-block {
+  padding-bottom: 40px;
+}
+.inner-page .about-us {
+  width: 100%;
+  padding: 0;
+}
+.inner-page .logo-block {
+  position: relative;
+}
+.inner-page .logo-block h1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: 700;
+  line-height: 1;
+}
+@media (max-width: 480px) {
+  .inner-page .logo-block h1 {
+    font-size: 2.5em;
+  }
+}
+.inner-page .top-text {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.inner-page .promo-text {
+  background: #f8f8f8;
+  border-top: 1px solid #f1f1f1;
+}
+.inner-page .custom-list {
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+}
+.inner-page .custom-list li {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  position: relative;
+  padding: 0 20px;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+.inner-page .custom-list li:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #9b1515;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+@media (max-width: 480px) {
+  .inner-page .custom-list li {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+/**********************************************************************************************************************
+********** about-xtaxi
+***********************************************************************************************************************/
+.known-more .image-wrap {
+  display: inline-block;
+  width: 242px;
+  vertical-align: middle;
+  margin-right: 35px;
+}
+@media (max-width: 768px) {
+  .known-more .image-wrap {
+    display: none;
+  }
+}
+.known-more .info {
+  display: inline-block;
+  width: calc(100% - 300px);
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .known-more .info {
+    display: block;
+    width: 100%;
+  }
+}
+.how-it-work {
+  margin: 40px 0;
+}
+.how-it-work .image-wrap {
+  display: inline-block;
+  width: 280px;
+  vertical-align: middle;
+  margin-left: 35px;
+}
+@media (max-width: 768px) {
+  .how-it-work .image-wrap {
+    display: none;
+  }
+}
+.how-it-work .info {
+  display: inline-block;
+  width: calc(100% - 340px);
+  vertical-align: middle;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .how-it-work .info {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+.known-more .info h2,
+.how-it-work .info h2 {
+  color: #9b1515;
+  font-size: 2.14em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.known-more .info .text,
+.how-it-work .info .text {
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+.our-secrets .wrapper-inner {
+  background: url(../images/decor-our-secrets.png) no-repeat left bottom, url(../images/background-our-secrets.jpg) no-repeat left center;
+  background-size: auto, cover;
+  padding: 35px 35px 35px 230px;
+}
+@media (max-width: 768px) {
+  .our-secrets .wrapper-inner {
+    background: url(../images/background-our-secrets.jpg) no-repeat left center;
+    background-size: cover;
+    padding: 10px;
+  }
+}
+.our-secrets h2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 230px;
+  color: #fda442;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+.our-secrets h2 span {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  font-size: .5em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+@media (max-width: 1230px) {
+  .our-secrets h2 {
+    display: block;
+    width: 100%;
+  }
+  .our-secrets h2 br {
+    display: none;
+  }
+}
+.our-secrets ul {
+  display: inline-block;
+  vertical-align: middle;
+  width: 730px;
+}
+.our-secrets ul li {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  padding: 0 20px 0 40px;
+  margin: 10px 0;
+  color: #fff;
+  position: relative;
+  font-size: 1.1em;
+}
+.our-secrets ul li:before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon-ok.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .our-secrets ul li {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+@media (max-width: 1230px) {
+  .our-secrets ul {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
