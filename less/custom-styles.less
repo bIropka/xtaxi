@@ -2146,10 +2146,6 @@ footer[role='contentinfo'] {
 
 }
 
-.window-sign-in {
-  display: block;
-}
-
 .custom-select {
   display: block;
   float: left;
@@ -3655,6 +3651,221 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
 
     }
 
+  }
+
+}
+
+/**********************************************************************************************************************
+********** contacts
+***********************************************************************************************************************/
+
+.contacts-info {
+  padding-bottom: 100px;
+
+  .contacts-cities {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    text-align: center;
+
+    li {
+      display: block;
+    }
+
+    .icon {
+      width: 185px;
+      margin: 0 auto;
+    }
+
+    span {
+      display: block;
+      font-size: 2.14em;
+      color: @color-red;
+      font-weight: 700;
+      margin: 20px 0 10px;
+    }
+
+    a {
+      font-size: 1.3em;
+    }
+
+  }
+
+  .custom-list {
+    width: 750px;
+
+    li {
+      width: 100%;
+
+      a {
+        color: @color-red;
+        font-size: 1.1em;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
+  }
+
+  .form-contacts {
+    width: 390px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 40px;
+
+    span {
+      display: block;
+      font-size: 2.14em;
+      color: @color-yellow;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      width: 100%;
+
+      input {
+        display: block;
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+      }
+
+      textarea {
+        display: block;
+        width: 100%;
+        height: 125px;
+        resize: none;
+        border: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+      }
+
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      background: @color-red;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 1.15em;
+      text-transform: uppercase;
+      color: #fff;
+
+      &:hover {
+         background: #fff;
+         color: @color-red;
+      }
+
+      &:active {
+        line-height: 63px;
+      }
+
+    }
+
+    @media(max-width: 1230px) {
+      position: static;
+    }
+
+    @media(max-width: 480px) {
+      width: 100%;
+    }
+
+  }
+
+  @media(max-width: 1230px) {
+    padding-bottom: 40px;
+
+    .contacts-cities {
+      display: block;
+      width: 100%;
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 30px;
+      }
+
+    }
+
+    .custom-list {
+      width: 100%;
+    }
+
+  }
+
+}
+
+.on-maps {
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 2.14em;
+    color: @color-red;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .in-moscow {
+    display: block;
+    width: 48.5%;
+    float: left;
+    margin-right: 3%;
+  }
+
+  .in-sp {
+    display: block;
+    width: 47.5%;
+    float: left;
+  }
+
+  span {
+    display: block;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  @media(max-width: 980px) {
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .in-moscow,
+    .in-sp {
+      width: 100%;
+      margin: 20px 0;
+
+      span {
+        text-align: left;
+      }
+
+    }
   }
 
 }

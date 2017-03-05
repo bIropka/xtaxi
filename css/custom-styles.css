@@ -1835,9 +1835,6 @@ footer[role='contentinfo'] .hours:after {
     top: 10%;
   }
 }
-.window-sign-in {
-  display: block;
-}
 .custom-select {
   display: block;
   float: left;
@@ -3108,5 +3105,181 @@ textarea:focus:-ms-input-placeholder {
 @media (max-width: 480px) {
   .services-list ul li {
     margin: 20px 0!important;
+  }
+}
+/**********************************************************************************************************************
+********** contacts
+***********************************************************************************************************************/
+.contacts-info {
+  padding-bottom: 100px;
+}
+.contacts-info .contacts-cities {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  text-align: center;
+}
+.contacts-info .contacts-cities li {
+  display: block;
+}
+.contacts-info .contacts-cities .icon {
+  width: 185px;
+  margin: 0 auto;
+}
+.contacts-info .contacts-cities span {
+  display: block;
+  font-size: 2.14em;
+  color: #901414;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+.contacts-info .contacts-cities a {
+  font-size: 1.3em;
+}
+.contacts-info .custom-list {
+  width: 750px;
+}
+.contacts-info .custom-list li {
+  width: 100%;
+}
+.contacts-info .custom-list li a {
+  color: #901414;
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+.contacts-info .custom-list li a:hover {
+  text-decoration: none;
+}
+.contacts-info .form-contacts {
+  width: 390px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 40px;
+}
+.contacts-info .form-contacts span {
+  display: block;
+  font-size: 2.14em;
+  color: #fda442;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+.contacts-info .form-contacts label {
+  display: block;
+  width: 100%;
+}
+.contacts-info .form-contacts label input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.contacts-info .form-contacts label textarea {
+  display: block;
+  width: 100%;
+  height: 125px;
+  resize: none;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+.contacts-info .form-contacts button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #901414;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 1.15em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.contacts-info .form-contacts button:hover {
+  background: #fff;
+  color: #901414;
+}
+.contacts-info .form-contacts button:active {
+  line-height: 63px;
+}
+@media (max-width: 1230px) {
+  .contacts-info .form-contacts {
+    position: static;
+  }
+}
+@media (max-width: 480px) {
+  .contacts-info .form-contacts {
+    width: 100%;
+  }
+}
+@media (max-width: 1230px) {
+  .contacts-info {
+    padding-bottom: 40px;
+  }
+  .contacts-info .contacts-cities {
+    display: block;
+    width: 100%;
+  }
+  .contacts-info .contacts-cities li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px;
+  }
+  .contacts-info .custom-list {
+    width: 100%;
+  }
+}
+.on-maps {
+  margin-bottom: 40px;
+}
+.on-maps h2 {
+  font-size: 2.14em;
+  color: #901414;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.on-maps .in-moscow {
+  display: block;
+  width: 48.5%;
+  float: left;
+  margin-right: 3%;
+}
+.on-maps .in-sp {
+  display: block;
+  width: 47.5%;
+  float: left;
+}
+.on-maps span {
+  display: block;
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+@media (max-width: 980px) {
+  .on-maps h2 {
+    margin-bottom: 0;
+  }
+  .on-maps .in-moscow,
+  .on-maps .in-sp {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .on-maps .in-moscow span,
+  .on-maps .in-sp span {
+    text-align: left;
   }
 }
