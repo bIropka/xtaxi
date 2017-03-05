@@ -1353,7 +1353,7 @@ nav .sign-in:hover .fa-unlock-alt {
   color: #901414;
   font-size: 1.1em;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .promo-text {
