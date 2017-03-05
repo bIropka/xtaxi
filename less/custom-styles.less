@@ -1886,6 +1886,58 @@ footer[role='contentinfo'] {
       top: 5%;
     }
 
+    &.form-sign {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      padding: 50px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 20%;
+      background: url(../images/background-sign.png) no-repeat center;
+      z-index: 101;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+
+      label {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      button {
+        display: block;
+        width: 100%!important;
+        margin: 10px 0;
+        background: @color-red!important;
+        border: 2px solid @color-red!important;
+        height: 40px!important;
+
+        &:hover {
+          background: #fff!important;
+        }
+      }
+
+      .close-marker {
+        background: #fff;
+        top: 0;
+        right: 0;
+      }
+
+      @media(max-width: 480px) {
+        width: 320px;
+        height: 320px;
+      }
+
+    }
+
     .title {
       line-height: 1;
       font-size: 2.15em;
@@ -2092,6 +2144,10 @@ footer[role='contentinfo'] {
 
   }
 
+}
+
+.window-sign-in {
+  display: block;
 }
 
 .custom-select {

@@ -1615,6 +1615,53 @@ footer[role='contentinfo'] .hours:after {
 .window form.form-order {
   top: 5%;
 }
+.window form.form-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  padding: 50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 20%;
+  background: url(../images/background-sign.png) no-repeat center;
+  z-index: 101;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.window form.form-sign label {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+.window form.form-sign button {
+  display: block;
+  width: 100%!important;
+  margin: 10px 0;
+  background: #901414 !important;
+  border: 2px solid #901414 !important;
+  height: 40px!important;
+}
+.window form.form-sign button:hover {
+  background: #fff!important;
+}
+.window form.form-sign .close-marker {
+  background: #fff;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 480px) {
+  .window form.form-sign {
+    width: 320px;
+    height: 320px;
+  }
+}
 .window form .title {
   line-height: 1;
   font-size: 2.15em;
@@ -1787,6 +1834,9 @@ footer[role='contentinfo'] .hours:after {
     padding: 20px;
     top: 10%;
   }
+}
+.window-sign-in {
+  display: block;
 }
 .custom-select {
   display: block;

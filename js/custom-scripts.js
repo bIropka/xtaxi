@@ -84,6 +84,12 @@ $(document).ready(function () {
 
     });
 
+    $('.sign-in').click(function() {
+
+        $('.window-sign-in').fadeIn();
+
+    });
+
     $('.window').click(function (event) {
         $target = $(event.target);
         if (!$target.closest($('.window form')).length) $('.window').fadeOut();
