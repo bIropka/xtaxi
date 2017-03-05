@@ -141,5 +141,11 @@ $(document).ready(function () {
         ]
     });
 
+    $('.slider-rates').slick({
+        appendArrows: '.slider-rates-control',
+        prevArrow: '.slider-rates-prev',
+        nextArrow: '.slider-rates-next'
+    });
+
 
 });
