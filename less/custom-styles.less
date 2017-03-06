@@ -1606,7 +1606,7 @@ footer[role='contentinfo'] {
   bottom: 0;
 
   .wrapper-inner {
-    padding: 60px 0 60px 300px;
+    padding: 60px 0 40px 300px;
 
     @media (max-width: 1230px) {
       padding: 45px 15px 45px 300px;
@@ -1808,6 +1808,22 @@ footer[role='contentinfo'] {
 
   }
 
+  .public {
+    display: block;
+    width: 100%;
+    float: left;
+
+    a {
+      color: lightgray;
+      position: relative;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
   @media (max-width: 1230px) {
     margin-top: 15px;
   }
@@ -1818,7 +1834,7 @@ footer[role='contentinfo'] {
   float: left;
   position: relative;
   z-index: 10;
-  margin-top: 10px;
+  margin-top: 0;
 
   li {
     display: inline-block;
@@ -2901,9 +2917,92 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
 
   }
 
+  .upload-fieldset {
+    width: 47%;
+    height: 55px;
+    float: right;
+
+    input[type='file'] {
+      display: none;
+    }
+
+    .upload-label {
+      width: 55px;
+      height: 55px;
+      background: @color-yellow;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      float: right;
+      margin: 0;
+      text-align: center;
+      cursor: pointer;
+      color: #fff;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -ms-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+
+      .fa {
+        line-height: 55px;
+        font-size: 32px;
+        color: inherit;
+      }
+
+      &:hover {
+        background: #fff;
+        color: @color-yellow;
+      }
+
+      &:active {
+        -webkit-transform: scale(.95);
+        -moz-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -o-transform: scale(.95);
+        transform: scale(.95);
+      }
+
+    }
+
+    .upload-message {
+      max-width: 250px;
+      text-align: right;
+      float: right;
+      color: #fff;
+      line-height: 55px;
+      margin: 0 10px 0 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    @media(max-width: 768px) {
+      float: left;
+      margin-bottom: 15px;
+      width: 1100%;
+      max-width: 100% ;
+
+      .upload-label {
+        float: left;
+      }
+
+      .upload-message {
+        display: block;
+        width: ~"calc(100% - 65px)";
+        max-width: 100%;
+        text-align: left;
+        float: left;
+        margin: 0 0 0 10px;
+      }
+
+    }
+
+  }
+
   button {
     display: block;
-    width: 310px;
+    width: 47%;
     height: 55px;
     line-height: 55px;
     -webkit-border-radius: 5px;
@@ -2913,6 +3012,8 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
     font-size: 1.15em;
     text-transform: uppercase;
     color: #fff;
+    margin: 0 6% 0 0;
+    float: left;
 
     &:hover {
       color: @color-red;
@@ -2987,7 +3088,7 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
       vertical-align: middle;
       width: 88px;
       height: 88px;
-      background: @color-red url(../images/sprite-2.png) no-repeat 0 0;
+      background: @color-red url(../images/sprite-2.png) no-repeat 0 -88px;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       border-radius: 100%;
@@ -2995,7 +3096,7 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
     }
 
     &:nth-child(2):before {
-      background-position: 0 -88px
+      background-position: 0 0
     }
 
     &:nth-child(3):before {
@@ -3119,6 +3220,7 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
 ***********************************************************************************************************************/
 
 .slider-rates {
+  margin-bottom: 40px;
 
   .slide {
     position: relative;
@@ -3229,6 +3331,12 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
     display: block;
     margin-top: 20px;
 
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
     .info {
       width: 380px;
       margin-bottom: 20px;
@@ -3291,7 +3399,8 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
   .slide:not(.slick-active) {
     .mark,
     .rate-name,
-    .rate-info {
+    .rate-info,
+    .additional-info {
       opacity: 0;;
     }
   }
@@ -3387,7 +3496,7 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
   text-align: center;
   line-height: 40px;
   position: absolute;
-  top: 45%;
+  top: 300px;
   z-index: 10;
   font-size: 48px;
   cursor: pointer;
@@ -3438,12 +3547,15 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
 }
 
 .additional-info {
-  margin-bottom: 40px;
+  display: block;
+  background: url(../images/background-black-rates.jpg) right center;
+  background-size: cover;
+  padding: 30px 60px 30px 30px;
 
-  .wrapper-inner {
-    background: url(../images/background-black-rates.jpg) right center;
-    background-size: cover;
-    padding: 30px 60px 30px 30px;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
   }
 
   ul {

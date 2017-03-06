@@ -1371,7 +1371,7 @@ footer[role='contentinfo'] {
   bottom: 0;
 }
 footer[role='contentinfo'] .wrapper-inner {
-  padding: 60px 0 60px 300px;
+  padding: 60px 0 40px 300px;
 }
 @media (max-width: 1230px) {
   footer[role='contentinfo'] .wrapper-inner {
@@ -1546,6 +1546,18 @@ footer[role='contentinfo'] .hours:after {
     float: none;
   }
 }
+.footer-bottom .public {
+  display: block;
+  width: 100%;
+  float: left;
+}
+.footer-bottom .public a {
+  color: lightgray;
+  position: relative;
+}
+.footer-bottom .public a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 1230px) {
   .footer-bottom {
     margin-top: 15px;
@@ -1555,7 +1567,7 @@ footer[role='contentinfo'] .hours:after {
   float: left;
   position: relative;
   z-index: 10;
-  margin-top: 10px;
+  margin-top: 0;
 }
 .footer-nav li {
   display: inline-block;
@@ -2503,9 +2515,81 @@ textarea:focus:-ms-input-placeholder {
 .form-black fieldset label:nth-of-type(2n) {
   margin-right: 0;
 }
+.form-black .upload-fieldset {
+  width: 47%;
+  height: 55px;
+  float: right;
+}
+.form-black .upload-fieldset input[type='file'] {
+  display: none;
+}
+.form-black .upload-fieldset .upload-label {
+  width: 55px;
+  height: 55px;
+  background: #fda442;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: right;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.form-black .upload-fieldset .upload-label .fa {
+  line-height: 55px;
+  font-size: 32px;
+  color: inherit;
+}
+.form-black .upload-fieldset .upload-label:hover {
+  background: #fff;
+  color: #fda442;
+}
+.form-black .upload-fieldset .upload-label:active {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.form-black .upload-fieldset .upload-message {
+  max-width: 250px;
+  text-align: right;
+  float: right;
+  color: #fff;
+  line-height: 55px;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-width: 768px) {
+  .form-black .upload-fieldset {
+    float: left;
+    margin-bottom: 15px;
+    width: 1100%;
+    max-width: 100% ;
+  }
+  .form-black .upload-fieldset .upload-label {
+    float: left;
+  }
+  .form-black .upload-fieldset .upload-message {
+    display: block;
+    width: calc(100% - 65px);
+    max-width: 100%;
+    text-align: left;
+    float: left;
+    margin: 0 0 0 10px;
+  }
+}
 .form-black button {
   display: block;
-  width: 310px;
+  width: 47%;
   height: 55px;
   line-height: 55px;
   -webkit-border-radius: 5px;
@@ -2515,6 +2599,8 @@ textarea:focus:-ms-input-placeholder {
   font-size: 1.15em;
   text-transform: uppercase;
   color: #fff;
+  margin: 0 6% 0 0;
+  float: left;
 }
 .form-black button:hover {
   color: #901414;
@@ -2574,14 +2660,14 @@ textarea:focus:-ms-input-placeholder {
   vertical-align: middle;
   width: 88px;
   height: 88px;
-  background: #901414 url(../images/sprite-2.png) no-repeat 0 0;
+  background: #901414 url(../images/sprite-2.png) no-repeat 0 -88px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   margin-right: 30px;
 }
 .for-whom ul li:nth-child(2):before {
-  background-position: 0 -88px;
+  background-position: 0 0;
 }
 .for-whom ul li:nth-child(3):before {
   background-position: 0 -176px;
@@ -2677,6 +2763,9 @@ textarea:focus:-ms-input-placeholder {
 /**********************************************************************************************************************
 ********** rates
 ***********************************************************************************************************************/
+.slider-rates {
+  margin-bottom: 40px;
+}
 .slider-rates .slide {
   position: relative;
 }
@@ -2772,6 +2861,11 @@ textarea:focus:-ms-input-placeholder {
   display: block;
   margin-top: 20px;
 }
+.slider-rates .rate-info:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .slider-rates .rate-info .info {
   width: 380px;
   margin-bottom: 20px;
@@ -2820,7 +2914,8 @@ textarea:focus:-ms-input-placeholder {
 }
 .slider-rates .slide:not(.slick-active) .mark,
 .slider-rates .slide:not(.slick-active) .rate-name,
-.slider-rates .slide:not(.slick-active) .rate-info {
+.slider-rates .slide:not(.slick-active) .rate-info,
+.slider-rates .slide:not(.slick-active) .additional-info {
   opacity: 0;
 }
 @media (max-width: 1230px) {
@@ -2895,7 +2990,7 @@ textarea:focus:-ms-input-placeholder {
   text-align: center;
   line-height: 40px;
   position: absolute;
-  top: 45%;
+  top: 300px;
   z-index: 10;
   font-size: 48px;
   cursor: pointer;
@@ -2938,12 +3033,15 @@ textarea:focus:-ms-input-placeholder {
   }
 }
 .additional-info {
-  margin-bottom: 40px;
-}
-.additional-info .wrapper-inner {
+  display: block;
   background: url(../images/background-black-rates.jpg) right center;
   background-size: cover;
   padding: 30px 60px 30px 30px;
+}
+.additional-info:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .additional-info ul {
   display: block;
